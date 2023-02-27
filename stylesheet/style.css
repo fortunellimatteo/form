@@ -1,0 +1,197 @@
+/* form data */
+
+#formData {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    margin-bottom: 15px;
+}
+
+#customerNameDiv {
+    padding-top: 25px;
+    width: 400px;
+    margin: auto;
+}
+
+#badgeNumberDiv {
+    padding-top: 25px;
+    width: 400px;
+    margin: auto;
+}
+
+#btnData {
+    padding-top: 10px;
+    padding-left: 10px;
+    margin: auto;
+    margin-top:5px;
+}
+
+#resultData {
+    margin-top: 10px;
+}
+
+/* form image */
+
+#form {
+    position: relative;
+    width: 500px;
+    height: 170px;
+    margin: auto;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    margin-bottom: 5px;
+}
+
+#upload {
+    margin-top: 40px;
+}
+
+#attachPhotoDiv{
+    width: 400px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+#nextPage {
+    width: 500px;
+    margin: auto;
+}
+
+#btnNextPage {
+    float: right;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+#result {
+    margin-top: 10px;
+}
+
+/* scanner and signature CSS*/
+
+#qr-reader {
+    margin: auto;
+    border-radius: 30px;
+    width: 600px;
+    background-color: whitesmoke;
+}
+
+#insertBarCodeData{
+    margin-top: 10px;
+}
+
+#signature-pad {
+    width: 600px;
+    height: 250px;
+    border-radius: 30px;
+    background-color: whitesmoke;
+}
+
+#textSignature {
+    padding-top: 10px;
+    margin: auto;
+    width: 500px;
+}
+
+#resultSig {
+    margin-top: 10px;
+}
+
+#btnFinish {
+    float: right;
+    margin-left: 20px;
+}
+
+/* Summary page */
+
+#summaryForm {
+    position: relative;
+    width: 900px;
+    height: 200px;
+    margin: auto;
+    background-color: rgb(159, 80, 80);
+    border-radius: 30px;
+    margin-bottom: 15px;
+}
+
+#formEmail {
+    position: relative;
+    width: 500px;
+    height: 200px;
+    margin: auto;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    margin-bottom: 15px;
+}
+
+/* resposive */
+
+/* Mobile Styles */
+@media only screen and (max-width: 415px) {
+    #qr-reader {
+        width: 300px;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    #tableResponsive {
+        width: 300px;
+        margin: auto;
+    }
+}
+
+
+@media only screen and (max-width: 415px) {
+    #summaryForm {
+        width: 300px;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    #flex-row {
+        width: 300px;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    #signature-pad {
+        width: 300px;
+        margin: auto;
+    }
+}
+
+/* override CSS for qr-reader library */
+
+a:link {
+    display: none;
+}
+
+img {
+    display: none;
+}
+
+#qr-reader__header_message {
+    display: none;
+}
+
+#qr-reader__status_span {
+    display: none;
+}
+
+#qr-reader__dashboard_section_swaplink {
+    display: block;
+}
+
+.button {
+    border-radius: 30px;
+}
+
+#qr-reader__header_message {
+    border-radius: 20px;
+}
