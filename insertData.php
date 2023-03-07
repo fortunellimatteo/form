@@ -1,8 +1,7 @@
 <?php
 
     session_start();
-
-    $conn = mysqli_connect("localhost", "root", "", "companyform");
+    $conn = mysqli_connect("89.46.111.193", "Sql1699276", "Caraibi_97", "Sql1699276_1");
 
     $customerName = $_REQUEST['customerName'];
     $badgeNumber = $_REQUEST['badgeNumber'];
