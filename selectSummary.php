@@ -4,7 +4,7 @@
     $customerName = $_SESSION['customerName'];
     $timestampStart = $_SESSION['timestampStart'];
 
-    $conn = mysqli_connect("localhost", "root", "", "companyform");
+    $conn = mysqli_connect("89.46.111.193", "Sql1699276", "Caraibi_97", "Sql1699276_1");
 
     $sql = "SELECT TBDATA.badgeNumber, TBIMAGES.imagePath, 
             TBBARCODES.barCodeLink, TBSIGNATURES.signaturePath
@@ -36,7 +36,7 @@
 
                 $imageStyle = "this.style.display='block'";
                 
-                echo '<table class="table" id="tableResponsive">';
+                /*echo '<table class="table" id="tableResponsive">';
                 echo '<thead>';
                 echo '    <tr>';
                 echo '      <th scope="col"></th>';
@@ -54,7 +54,7 @@
                 echo '      <td>'.$row["barCodeLink"].'</td>';
                 echo '      <td>'.'<img src="/form/'.$row["signaturePath"].'" onload="'.$imageStyle.'" width="200" height="80"/>'.'</td>';
                 echo '    </tr>';
-                /*echo '    <tr>';
+                echo '    <tr>';
                 echo '    <th scope="row">2</th>';
                 echo '    <td>Jacob</td>';
                 echo '    <td>Thornton</td>';
@@ -67,9 +67,26 @@
                 echo '    <td>the Bird</td>';
                 echo '    <td>@twitter</td>';
                 echo '    <td>@twitter</td>';
-                echo '    </tr>';*/
+                echo '    </tr>';
                 echo '</tbody>';
-                echo '</table>';
+                echo '</table>';*/
+
+                echo '<div id="tableResponsive">';
+                echo $row["badgeNumber"];
+                echo '<p class="line">____________________________</p>';
+                echo '<img src="/form/'.$row["imagePath"].'" onload="'.$imageStyle.'" width="80" height="80"/>';
+                echo '<p class="line">____________________________</p>';
+                if (strlen($row["barCodeLink"]) > 35) {
+                    $string = $row["barCodeLink"];
+                    $rest = substr($string, 0, 35);
+                    echo $rest.'...';
+                } else {
+                    echo $row["barCodeLink"];
+                }
+                echo '<p class="line">____________________________</p>';
+                echo '<img src="/form/'.$row["signaturePath"].'" onload="'.$imageStyle.'" width="200" height="80"/>';
+                echo '</div>';
+
         }
       } else {
             echo "No customer added";
