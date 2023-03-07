@@ -2,7 +2,8 @@
 
     session_start();
 
-    $conn = mysqli_connect("localhost", "root", "", "companyform");
+    //$conn = mysqli_connect("localhost", "root", "", "companyform");
+    $conn = mysqli_connect("89.46.111.193", "Sql1699276", "Caraibi_97", "Sql1699276_1");
 
     foreach($_FILES['images']['name'] as $i => $value) {
         $image_name = $_FILES['images']['tmp_name'][$i];
