@@ -14,15 +14,15 @@
       <title>Form</title>
     </head>
     <body>
-        <div><center><h2>Form</h2></center></div>
+        <div class="title"><center><h2>Form</h2></center></div>
         <form id="formData" action="" method="POST">
           <div id="customerNameDiv" class="form-group">
-            <label for="customerName">Customer name</label>
+            <label id="labelName" for="customerName">Customer name</label>
             <input id="block" type="customerName" class="form-control" name="customerName" 
             required aria-describedby="usernameHelp" placeholder="Customer name...">
           </div>
           <div id="badgeNumberDiv" class="form-group">
-            <label for="badgeNumber">Badge number</label>
+            <label id="labelBadge" for="badgeNumber">Badge number</label>
             <input type="badgeNumber" class="form-control" id="block2" 
             name="badgeNumber" placeholder="Badge number..." required>
           </div>
