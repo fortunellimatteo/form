@@ -22,6 +22,7 @@ Thank you.";
         header("Location: index.php");
     } else {
         echo "Email sending failed $to_email...";
+        header("Location: summaryPage.php");
     }
 
     // mail di prova fortunellimatteo7@gmail.com e pass: Caraibi97 da inserire nel form
